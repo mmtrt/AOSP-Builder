@@ -7,6 +7,8 @@ env:
     VT_LINK: https://gitlab.com/mmtrt/vendor_xiaomi_evergo.git
     VT_PATH: vendor/$OEM/$DEVICE
     KT_LINK: https://github.com/Xiaomi-MT6833/kernel_xiaomi_evergo.git
+    SE_LINK: https://github.com/PixelExperience/device_mediatek_sepolicy_vndr.git -b twelve
+    SE_PATH: device/mediatek/sepolicy_vndr
     PLATFORM: evergo
     KT_PATH: kernel/$OEM/$PLATFORM
     TARGET: bacon
@@ -56,6 +58,7 @@ task:
       - git clone $DT_LINK $DT_PATH
       - git clone $VT_LINK $VT_PATH
       - git clone $KT_LINK $KT_PATH
+      - git clone $SE_LINK $SE_PATH
       - echo "============================"
       - echo "Syncing Complete!"
       - echo "============================"
