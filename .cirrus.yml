@@ -4,9 +4,9 @@ env:
     OEM: xiaomi
     DT_LINK: https://github.com/mmtrt/device_xiaomi_evergo.git -b mix
     DT_PATH: device/$OEM/$DEVICE
-    VT_LINK: https://gitlab.com/mmtrt/vendor_xiaomi_evergo.git -b arrow-12.1
+    VT_LINK: https://gitlab.com/mmtrt/vendor_xiaomi_evergo.git
     VT_PATH: vendor/$OEM/$DEVICE
-    KT_LINK: https://github.com/Xiaomi-MT6833/kernel_xiaomi_evergo.git -b eleven
+    KT_LINK: https://github.com/Xiaomi-MT6833/kernel_xiaomi_evergo.git
     PLATFORM: evergo
     KT_PATH: kernel/$OEM/$PLATFORM
     TARGET: bacon
