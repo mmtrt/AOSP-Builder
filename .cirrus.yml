@@ -62,7 +62,6 @@ task:
       - git clone $VT_LINK $VT_PATH
       - git clone $KT_LINK $KT_PATH
       - git clone $EKT_LINK $EKT_PATH
-      - git clone $SE_LINK $SE_PATH
       - echo "============================"
       - echo "Syncing Complete!"
       - echo "============================"
