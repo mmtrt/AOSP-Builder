@@ -1,5 +1,5 @@
 env:
-    MANIFEST: https://github.com/PixelExperience/manifest.git -b twelve-plus
+    MANIFEST: https://github.com/ArrowOS/android_manifest.git -b arrow-12.1
     DEVICE: evergo
     OEM: xiaomi
     DT_LINK: https://github.com/mmtrt/device_xiaomi_evergo.git -b mix
@@ -16,8 +16,8 @@ env:
     KT_PATH: kernel/$OEM/$PLATFORM
     TARGET: bacon
     EXTRA_CMD: export SKIP_ABI_CHECKS=true
-    LUNCH_COMBO: aosp_${DEVICE}-userdebug
-    OUTPUT: PixelExperience*.zip
+    LUNCH_COMBO: arrow_${DEVICE}-userdebug
+    OUTPUT: Arrow-*.zip
 
 task:
   name: "Setting Up, Syncing, Building and Uploading..."
