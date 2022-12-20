@@ -12,8 +12,6 @@ env:
     EKT_PATH: kernel_xiaomi_evergo
     SE_LINK: https://github.com/PixelExperience/device_mediatek_sepolicy_vndr.git -b twelve
     SE_PATH: device/mediatek/sepolicy_vndr
-    VMIMS_LINK: https://github.com/PixelExperience/vendor_mediatek_ims.git -b twelve
-    VMIMS_PATH: vendor/mediatek/ims
     PLATFORM: evergo
     KT_PATH: kernel/$OEM/$PLATFORM
     TARGET: bacon
@@ -65,7 +63,6 @@ task:
       - git clone $KT_LINK $KT_PATH
       - git clone $EKT_LINK $EKT_PATH
       - git clone $SE_LINK $SE_PATH
-      - git clone $VMIMS_LINK $VMIMS_PATH
       - echo "============================"
       - echo "Syncing Complete!"
       - echo "============================"
