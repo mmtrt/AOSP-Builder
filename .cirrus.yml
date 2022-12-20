@@ -12,6 +12,8 @@ env:
     EKT_PATH: kernel_xiaomi_evergo
     SE_LINK: https://github.com/PixelExperience/device_mediatek_sepolicy_vndr.git -b twelve
     SE_PATH: device/mediatek/sepolicy_vndr
+    MTG_LINK: https://gitlab.com/MindTheGapps/vendor_gapps.git
+    MTG_PATH: vendor/gapps
     PLATFORM: evergo
     KT_PATH: kernel/$OEM/$PLATFORM
     TARGET: bacon
@@ -62,6 +64,7 @@ task:
       - git clone $VT_LINK $VT_PATH
       - git clone $KT_LINK $KT_PATH
       - git clone $EKT_LINK $EKT_PATH
+      - git clone $MTG_LINK $MTG_PATH
       - echo "============================"
       - echo "Syncing Complete!"
       - echo "============================"
